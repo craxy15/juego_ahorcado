@@ -26,6 +26,8 @@ while vidas>0:
 
     tuletra=input('Entroduce una letra: ')
     letrap+=tuletra
+    if tuletra in letrap:
+        print("Ya has usado esta letra,prueba con otra!")
 
     if tuletra not in palabra_secreta:
         vidas-=1
